@@ -1,0 +1,51 @@
+header {
+    background-color: #181717;
+    position: sticky;
+    padding: 1rem 2 rem;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #d7e6ed ;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    
+}
+
+.nav-links a:hover {
+    color: #090909;
+}
+
+
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
