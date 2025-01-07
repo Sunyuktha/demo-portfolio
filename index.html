@@ -8,27 +8,32 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
-                <li><a href="./skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="./assests/images/profile.jpg"  class="profile-image">
-            <h1>Hi, I'm Sunyuktha Ravichandran</h1>
-            <p>Full Stack Developer | Programmer</p>
-        
+        <div class="hero-container">
+            <div class="hero-left">
+                <img src="./assests/images/profile.jpg" alt="Profile Picture" class="profile-image">
+            </div>
+            <div class="hero-right">
+                <h1>Hi, I'm Sunyuktha Ravichandran</h1>
+                <p>Full Stack Developer | Programmer</p>
+                <a href="./projects.html" class="btn">View Projects</a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p> All the Declaration are given correct any doubts contact:987654321</p>
+        <p>&copy; 2024 All rights reserved. Contact: 987654321</p>
     </footer>
 
     <script src="app.js"></script>
