@@ -1,90 +1,112 @@
 
-body {
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
     color: #333;
+    line-height: 1.6;
 }
-
-a:hover {
-    color: #007BFF;
-}
-
 
 header {
-    background-color: #181717;
-    position: sticky;
-    top: 0 rem;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 15px;
 }
 
 .nav-links a {
-    color: #fff;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
     
 }
 
-.nav-links a:hover {
-    color: #090909;
-}
 
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
 .hero {
-    height: 100vh;
-    background-color: #d7e6ed ;
-    color: #090809;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
+    padding: 0 20px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-left {
+    flex: 1;
     text-align: center;
-    
 }
 
-.hero-content {
-    max-width: 800px;
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px; 
+    border: 5px solid #00bcd4;
+    object-fit: cover; 
 }
 
-.hero-content h1 {
+.hero-right {
+    flex: 2;
+    padding-left: 40px;
+}
+
+h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .btn {
-    
-    background-color: #fff;
-    color: #2575fc;
-    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
+    font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
     
 }
 
 .btn:hover {
-    background-color: #2575fc;
-    color: #fff;
+    background-color: #007c91;
 }
 
-
-
 footer {
-    
+    background-color: #1a1a1a;
+    color: white;
     text-align: center;
-    background-color: #222;
-    color: #fff;
+    padding: 10px 20px;
+    position: relative;
 }
