@@ -1,45 +1,90 @@
-header {
-    background-color: #181717;
-    position: sticky;
-    padding: 1rem 2 rem;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.about {
-    padding: 5rem 2rem;
-    text-align: center;
+body {
     background-color: #d7e6ed ;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    gap: 20px;
 }
 
 .nav-links a {
-    color: #fff;
-    
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #090909;
+
+
+.about {
+    margin-top: 80px; 
+    text-align: center;
+    padding: 40px 20px;
 }
-
-
 
 .about h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
 }
 
-.about p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.contact-info img {
+    width: 24px; 
+    height: 24px;
+    object-fit: contain;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    
 }
 
 
@@ -48,4 +93,30 @@ header {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+
 }
+
+.about-details {
+    text-align: center;
+}
+
+.about-details p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.info-list,
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li,
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+
